@@ -1,1 +1,1 @@
-export { increase, decrease } from "@redux/slices/counter";
+export { setSearchTerm } from '@redux/slices/search';

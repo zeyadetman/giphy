@@ -1,8 +1,8 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-import counter from "@redux/slices/counter";
+import search from '@redux/slices/search';
 
-const rootReducer = combineReducers({ counter });
+const rootReducer = combineReducers({ search });
 
 export type RootState = ReturnType<typeof rootReducer>;
 

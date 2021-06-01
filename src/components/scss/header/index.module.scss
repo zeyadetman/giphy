@@ -1,4 +1,9 @@
 .header {
-    background-color: #20232a;
-    text-align: center;
+  background-color: var(--solid-black);
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
