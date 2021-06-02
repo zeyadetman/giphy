@@ -11,10 +11,6 @@ export const useWindowSize = (): WindowSize => {
   });
   useEffect(() => {
     function handleResize() {
-      const pixels = 100;
-      const screenWidth = window.screen.width;
-      const percentage = (screenWidth - pixels) / screenWidth; // 0.92%
-      console.log(percentage);
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight,

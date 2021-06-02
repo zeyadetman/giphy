@@ -5,20 +5,24 @@ import RCModal from 'react-modal';
 interface RCModalInterface {
   isOpen: boolean;
   toggleModal: () => void;
-  children: any;
-  gif: any;
+  children: unknown;
+  gif: unknown;
 }
-export const Modal: React.FC<any> = ({
+export const Modal: React.FC<RCModalInterface> = ({
   isOpen,
   toggleModal,
   children,
-  gif,
-}: RCModalInterface) => {
-  console.log({ gif });
+}) => {
   return (
     <CSSTransition in={isOpen} timeout={300} classNames="dialog">
-      <RCModal closeTimeoutMS={500} isOpen={isOpen} ariaHideApp={false}>
-        <button onClick={toggleModal}>x</button>
+      <RCModal
+        closeTimeoutMS={500}
+        isOpen={isOpen}
+        ariaHideApp={false}
+        onRequestClose={() => {
+          toggleModal();
+        }}
+      >
         {children}
       </RCModal>
     </CSSTransition>

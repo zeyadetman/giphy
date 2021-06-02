@@ -1,5 +1,6 @@
 export { Header } from './header';
 export { Logo } from './logo';
 export { Main } from './main';
-export { Button } from './button';
+export { LogoutButton } from './logout-button';
+export { LoginButton } from './login-button';
 export { Footer } from './footer';

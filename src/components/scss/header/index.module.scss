@@ -5,5 +5,21 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.route {
+  background: linear-gradient(90deg,#00ff99,#56be84);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  border-bottom: 2px solid #56be84;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.userNav {
+  display: flex;
+  align-items: center;
 }

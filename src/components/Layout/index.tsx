@@ -1,20 +1,24 @@
 import React from 'react';
 import { Header, Footer } from '@components/scss';
+import { useWindowSize } from 'src/Hooks/useWindowSize';
 
 interface LayoutInterface {
   children?: React.ReactElement;
-  contentWidth: number;
+  showSearchBar?: boolean;
 }
-const Layout: React.FC<any> = (props: LayoutInterface) => {
+const Layout: React.FC<LayoutInterface> = ({ children, showSearchBar }) => {
+  const { width } = useWindowSize();
+  const contentWidth = width >= 768 ? 80 : 100;
+
   return (
     <div
       style={{
-        width: `${props.contentWidth}%`,
+        width: `${contentWidth}%`,
         margin: '0 auto',
       }}
     >
-      <Header />
-      {props.children}
+      <Header showSearchBar={showSearchBar} />
+      {children}
       <Footer />
     </div>
   );

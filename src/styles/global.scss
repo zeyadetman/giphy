@@ -1,4 +1,5 @@
 @import './colors';
+@import './constants';
 
 html,
 body {
@@ -11,7 +12,7 @@ body {
 }
 
 .ReactModal__Overlay {
-  background-color: #000000cc;
+  background-color: #000000bd !important;
   opacity: 0;
   transform: translateX(-100px);
   transition: all 500ms ease-in-out;
@@ -26,10 +27,18 @@ body {
     transform: translateX(-100px);
   }
 
-  & .ReactModal__Content--after-open {
+  & .ReactModal__Content--after-open.ReactModal__Content {
     width: 50%;
     margin: 0 auto;
     min-width: 350px;
     max-width: 600px;
+    color: white;
+    background-color: var(--solid-black) !important;
+    box-shadow: 1px 1px 17px 0px #2a2a2a !important;
+    border: none !important;
+
+    @media screen and (min-width: 920px) {
+      height: fit-content;
+    }
   }
 }

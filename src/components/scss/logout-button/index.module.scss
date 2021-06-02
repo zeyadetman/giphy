@@ -1,0 +1,52 @@
+.navigation {
+  width: 100%;
+  background-color: black;
+
+  & img {
+    width: 25px;
+    border-radius: 50px;
+    float: left;
+  }
+
+  & a {
+    text-decoration: none;
+
+    &:hover {
+      width: 100px;
+    }
+
+    &:hover .logout{
+      opacity: .9;
+    }
+  }
+}
+
+
+
+.logout {
+  font-size: .8em;
+  font-family: 'Oswald', sans-serif;
+	position: relative;
+  right: -10px;
+  bottom: -4px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  opacity: 0;
+  transition: opacity .45s;
+  -webkit-transition: opacity .35s;
+
+}
+
+.button {
+	text-decoration: none;
+	float: right;
+  padding: 12px;
+  margin: 15px;
+  color: var(--solid-white);
+  width: 25px;
+  background-color: var(--solid-black);
+  transition: width .35s;
+  -webkit-transition: width .35s;
+  overflow: hidden
+}
+
