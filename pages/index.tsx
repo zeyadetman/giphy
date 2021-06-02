@@ -11,8 +11,9 @@ import { auth, db } from 'src/firebase/base';
 import { setUser } from '@redux/actions';
 import { useAppDispatch } from '@redux/store';
 import { useWindowSize } from 'src/Hooks/useWindowSize';
+import { NextPage } from 'next';
 
-const Home: React.FC = () => {
+const Home: NextPage<unknown> = () => {
   const { width } = useWindowSize();
   const contentWidth = width >= 768 ? 80 : 100;
   const dispatch = useAppDispatch();
