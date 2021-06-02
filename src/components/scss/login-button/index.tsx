@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.scss';
 
 interface LoginButtonInterface {
-  onClick: () => void;
+  onClick: (e: any) => Promise<void>;
 }
 const LoginButton: React.FC<LoginButtonInterface> = ({ onClick }) => {
   return (

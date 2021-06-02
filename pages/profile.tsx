@@ -19,7 +19,7 @@ import { useRouter } from 'next/router';
 const Profile: NextPage<unknown> = () => {
   const dispatch = useAppDispatch();
   const router = useRouter();
-  const { user } = useSelector((state: RootState) => state.auth);
+  const { user }: any = useSelector((state: RootState) => state.auth);
   const fetchFavsGifs = () => gf.gifs(user.userFavs);
   const { width } = useWindowSize();
   const contentWidth = width >= 768 ? 80 : 100;

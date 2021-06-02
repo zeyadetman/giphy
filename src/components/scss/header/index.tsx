@@ -14,7 +14,7 @@ interface HeaderInterface {
   showSearchBar: boolean;
 }
 export const Header: React.FC<HeaderInterface> = ({ showSearchBar }) => {
-  const { user } = useSelector((state: RootState) => state.auth);
+  const { user }: any = useSelector((state: RootState) => state.auth);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
   const dispatch = useAppDispatch();
@@ -72,7 +72,7 @@ export const Header: React.FC<HeaderInterface> = ({ showSearchBar }) => {
           placeholder="Search..."
           onSubmit={(e) => {
             e.preventDefault();
-            const { search } = Object.fromEntries(new FormData(e.target));
+            const { search }: any = Object.fromEntries(new FormData(e.target));
             dispatch(setSearchTerm(search));
           }}
         />

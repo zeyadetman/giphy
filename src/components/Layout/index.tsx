@@ -3,7 +3,7 @@ import { Header, Footer } from '@components/scss';
 import { useWindowSize } from 'src/Hooks/useWindowSize';
 
 interface LayoutInterface {
-  children?: React.ReactElement;
+  children: any;
   showSearchBar?: boolean;
 }
 const Layout: React.FC<LayoutInterface> = ({ children, showSearchBar }) => {

@@ -1,7 +1,11 @@
 import React from 'react';
 import styles from './index.module.scss';
 
-const Search: React.FC = ({ onSubmit, placeholder }) => {
+interface InputInterface {
+  placeholder: string;
+  onSubmit: (e: any) => void;
+}
+const Search: React.FC<InputInterface> = ({ onSubmit, placeholder }) => {
   return (
     <form onSubmit={onSubmit} role="search" className={styles.form}>
       <input
@@ -20,6 +24,11 @@ const mappingComponent: any = {
   search: (props) => <Search {...props} />,
 };
 
-export const Input: React.FC = ({ type, ...props }: any) => {
+interface InputInterface {
+  type?: string;
+  placeholder: string;
+  onSubmit: (e: any) => void;
+}
+export const Input: React.FC<InputInterface> = ({ type, ...props }: any) => {
   return mappingComponent[type](props);
 };
