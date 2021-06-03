@@ -6,12 +6,7 @@ interface LoginButtonInterface {
 }
 const LoginButton: React.FC<LoginButtonInterface> = ({ onClick }) => {
   return (
-    <a
-      onClick={onClick}
-      className={styles.loginButton}
-      target="_blank"
-      rel="nofollow"
-    >
+    <a onClick={onClick} className={styles.loginButton} href="">
       <span>Login</span>
     </a>
   );
