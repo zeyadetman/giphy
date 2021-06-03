@@ -39,7 +39,10 @@ body {
 
     @media screen and (min-width: 920px) {
       height: fit-content;
-      padding: 0;
+    }
+
+    @media screen and (max-width: 920px) {
+      padding: 0 !important;
     }
   }
 }
