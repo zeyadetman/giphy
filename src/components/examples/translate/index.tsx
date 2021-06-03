@@ -18,10 +18,6 @@ const I18NExampleComponent: React.FC<{ t: TFunction }> = ({ t }) => {
     <div>
       <header>
         <h2>{t`home:title`}</h2>
-        <div>
-          <button onClick={changeLanguage}>{t(`common:language.en`)}</button>
-          <button onClick={changeLanguage}>{t(`common:language.tr`)}</button>
-        </div>
       </header>
       <main>
         <p>{t('common:greet', { name: t`common:world` })}</p>

@@ -44,7 +44,7 @@ const Profile: NextPage<unknown> = () => {
           }),
         );
       } else {
-        router.push('/en');
+        router.push('/');
         dispatch(setUser(null));
       }
       setLoading(false);

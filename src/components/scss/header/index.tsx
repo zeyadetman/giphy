@@ -83,11 +83,11 @@ export const Header: React.FC<HeaderInterface> = ({ showSearchBar }) => {
       {user ? (
         <div className={styles.userNav}>
           {router.pathname === '/' ? (
-            <Link href="/en/profile">
+            <Link href="/profile">
               <span className={styles.route}>/Profile</span>
             </Link>
           ) : (
-            <Link href="/en">
+            <Link href="/">
               <span className={styles.route}>/Home</span>
             </Link>
           )}
