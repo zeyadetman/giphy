@@ -1,8 +1,7 @@
 # Live Demo
-
 https://zeyad-giphy.netlify.app/
 
-# Tech Stack
+## Tech Stack
 
 1. **TypeScript**
 2. **ReactJS**
@@ -20,8 +19,6 @@ https://zeyad-giphy.netlify.app/
 14. **nock:** mock api testing.
 15. **lint-staged, husky:** Force code styling using git hooks.
 
-# Run on Development
+## Run on Development
 - `npm i`
 - `npm run dev`
-
-
