@@ -1,5 +1,12 @@
+*PLEASE READ NOTES SECTION CAREFULLY BEFORE RUNNING APP*
+
 # Live Demo
 https://zeyad-giphy.netlify.app/
+
+## Notes
+- I'm using a beta api key for Giphy, So its rate limit is 1000 request/day, and 42 requests/hour.
+- I'm using a firebase to save users' favorites.
+- For local demo, I'll provide the api keys in email, please don't forget to copy them in `.env.local`
 
 ## Tech Stack
 
