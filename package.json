@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export",
     "lint": "eslint '**/*.{js,jsx,ts,tsx,json}'",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,*rc}'",
     "test": "jest -c test/jest.config.js"
