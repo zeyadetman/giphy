@@ -11,13 +11,14 @@ https://zeyad-giphy.netlify.app/
 5. **redux/toolkit:** To manage state across the app.
 6. **Giphy:** I've used Giphy to handle List gifs, and getting them.
 7. **Netlify:** Deployment.
-8. **scss:** using scss for styling.
-9. **prettier** Force code styling.
-10. **Eslint:** Catch code errors.
-11. **dotenv:** handling env variables.
-12. **jest:** testing.
-13. **nock:** mock api testing.
-14. **lint-staged, husky:** Force code styling using git hooks.
+8. **GitHubActions:** CI
+9. **scss:** using scss for styling.
+10. **prettier** Force code styling.
+11. **Eslint:** Catch code errors.
+12. **dotenv:** handling env variables.
+13. **jest:** testing.
+14. **nock:** mock api testing.
+15. **lint-staged, husky:** Force code styling using git hooks.
 
 
 
