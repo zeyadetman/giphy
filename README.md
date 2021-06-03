@@ -20,6 +20,8 @@ https://zeyad-giphy.netlify.app/
 14. **nock:** mock api testing.
 15. **lint-staged, husky:** Force code styling using git hooks.
 
-
+# Run on Development
+- `npm i`
+- `npm run dev`
 
 
