@@ -8,6 +8,7 @@ const localeSubpaths = {
 };
 
 const config = {
+  target: 'serverless',
   rewrites: async () => nextI18NextRewrites(localeSubpaths),
   publicRuntimeConfig: {
     localeSubpaths,
